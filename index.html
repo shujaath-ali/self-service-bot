@@ -14,14 +14,14 @@
             <script type="text/javascript">
                 (function(w, d, x, id){
                     s=d.createElement('script');
-                    s.src='REPLACE amazon connect chat interface client uri HERE';
+                    s.src='https://lab-connect-us-east-1-796973478690.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
                     s.async=1;
                     s.id=id;
                     d.getElementsByTagName('head')[0].appendChild(s);
                     w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
-                })(window, document, 'amazon_connect', 'REPLACE widgetId HERE');
+                })(window, document, 'amazon_connect', 'e52ee651-1a11-4913-b37f-80a28f8b3d81');
                 amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#ff9200' }, closeChat: { color: '#ffffff', backgroundColor: '#ff9200'} });
-                amazon_connect('snippetId', 'REPLACE snippetId HERE');
+                amazon_connect('snippetId', 'QVFJREFIaFg3VVJ2dFRXb2IrUUdndUkvUzRJMnRnQ1NJL3Erc1JKT0lFQ3lCQlNlUEFHYy8zdWR5UHQwK3ZUY3IvYzAzVEQ2QUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNOStpcXV0YXdMWmVjL2huTkFnRVFnQ3ZhdFMxTXd5UnhYb0lkY3I0b2V0RndaVzAvNVBCcWd3ZUZCR0x2KzhWNUpiRDA5UW1CZVQxTVJyMmo6OkpaRmpVcGxvdEd1WElUYTc5QkphMUdtaTdaU3BuYWVyaUU5dXA0YWxyZUxDK0doNU1UNTRuS1pZNEp4dkwwN2NjMnFWcWZtN1E1c3htQ0ZqbFUxNUtOSnA3TDdEMmErMVJ2WUNUY2tWNHBYUTkxUmlBQ0tjdUlwZmJBbm80ZlNWK0daTThVd2pFUjJzTGRzTXBIRWlkVFZ5VzhFaFBrRT0=');
                 amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
                 amazon_connect('customStyles', {global: { frameWidth: '500px', frameHeight: '900px'}})
             </script>
