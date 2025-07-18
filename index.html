@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+            <style>
+            body { background-image: url("background.jpg"); background-repeat: no-repeat; background-size: cover; }
+            </style>
+            <title>Chat</title>
+        </head>
+        <body>    
+            <div id="root"></div>            
+            <script type="text/javascript">
+                (function(w, d, x, id){
+                    s=d.createElement('script');
+                    s.src='REPLACE amazon connect chat interface client uri HERE';
+                    s.async=1;
+                    s.id=id;
+                    d.getElementsByTagName('head')[0].appendChild(s);
+                    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+                })(window, document, 'amazon_connect', 'REPLACE widgetId HERE');
+                amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#ff9200' }, closeChat: { color: '#ffffff', backgroundColor: '#ff9200'} });
+                amazon_connect('snippetId', 'REPLACE snippetId HERE');
+                amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+                amazon_connect('customStyles', {global: { frameWidth: '500px', frameHeight: '900px'}})
+            </script>
+        </body>
+        </html>
